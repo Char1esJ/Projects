@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Project
+
+  Created by Edgar on 15.11.25.
+  
+*/
+/* Auth - Login */
+"auth.email.label" = "Email";
+"auth.email.placeholder" = "Your email address";
+"auth.password.label" = "Password";
+"auth.password.placeholder" = "Enter Password";
+"auth.login.button" = "Log In";
+"auth.google.button" = "Continue with Google";
+"auth.new.user" = "New To Wazaaaaap?";
+"auth.signup.button" = "Sign Up";
+
+/* Auth - Sign Up */
+"auth.signup.title" = "Sign Up";
+"auth.fullname.label" = "Full Name";
+"auth.fullname.placeholder" = "Your full name";
+"auth.username.label" = "Username";
+"auth.username.placeholder" = "Your username";
+"auth.confirm.password.label" = "Confirm Password";
+"auth.confirm.password.placeholder" = "Confirm Password";
+
+/* Profile */
+"profile.title" = "Your profile";
+"profile.fullname.label" = "Full name";
+"profile.username.label" = "Username";
+"profile.language" = "Language";
+"profile.save" = "Save";
+"profile.logout" = "Log out";
+"profile.choose.picture" = "Choose Profile Picture";

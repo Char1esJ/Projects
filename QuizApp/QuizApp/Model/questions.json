@@ -1,0 +1,786 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "In SwiftUI, which property wrapper should you use when you want a view to own and manage its own state data that can change over time and trigger view updates when modified?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "@State",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "@Binding",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "@ObservedObject",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "@Published",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which layout container in SwiftUI arranges its child views in a vertical line from top to bottom, stacking them one on top of another with optional spacing between them?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "HStack",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "VStack",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "ZStack",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "LazyVGrid",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "When you need to pass a reference to a state variable from a parent view to a child view so the child can read and modify that value, which property wrapper should you use in the child view?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "@State",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "@Binding",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "@Environment",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "@StateObject",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What modifier would you apply to a view in SwiftUI to make it completely ignore the safe area insets on all edges, allowing it to extend under the status bar and home indicator?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".edgesIgnoringSafeArea(.all)",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".ignoresSafeArea()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".frame(maxWidth: .infinity)",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".ignoreSafeArea()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which SwiftUI view creates a scrollable list of views that are computed on demand, making it memory efficient for displaying large collections of data without loading everything at once?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "VStack",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "ScrollView",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "List",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "ForEach",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "In SwiftUI, which protocol must a class conform to in order to be used with @ObservedObject or @StateObject, allowing it to publish changes that trigger view updates when its properties change?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "Identifiable",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "ObservableObject",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Codable",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Equatable",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What is the correct syntax for creating a simple button in SwiftUI that prints a message to the console when tapped, using the most common button initialization method with a trailing closure?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "Button(\"Tap me\") { print(\"Tapped\") }",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Button(action: print(\"Tapped\")) { Text(\"Tap me\") }",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Button { Text(\"Tap me\") } action: { print(\"Tapped\") }",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Button(\"Tap me\", onClick: print(\"Tapped\"))",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which layout container in SwiftUI overlays its child views on top of each other with the first view at the back and subsequent views layered above, similar to layers in a design tool?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "VStack",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "HStack",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "ZStack",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Group",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "When using @Published on a property inside an ObservableObject class, what happens automatically whenever that property's value changes, making SwiftUI views update accordingly?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "The view is destroyed and recreated",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "A notification is sent to observers",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "The app restarts",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "A new instance is created",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What modifier would you use to add rounded corners to a SwiftUI view, specifying the radius of the curve that creates the rounded effect at each corner of the view's frame?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".cornerRadius()",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": ".clipShape(RoundedRectangle())",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": ".roundCorners()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".border(radius:)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "In SwiftUI navigation, which view component allows you to push and pop views in a stack-based navigation pattern, similar to UINavigationController in UIKit, providing automatic back button functionality?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "TabView",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "NavigationView",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Sheet",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "NavigationStack",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Which property wrapper should you use when creating an instance of an ObservableObject that the view owns and manages its lifecycle, ensuring the object persists correctly across view updates and isn't recreated unnecessarily?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "@State",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "@ObservedObject",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "@StateObject",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "@EnvironmentObject",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What SwiftUI modifier allows you to set custom spacing between individual child views within a stack, overriding the default spacing specified when the stack was created?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".spacing()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".padding()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".offset()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".frame()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "In SwiftUI, what is the primary purpose of the ForEach view when working with collections of data, especially when you need to create dynamic views based on array elements or ranges?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "To filter array elements",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "To create views from a collection",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "To sort data automatically",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "To animate list changes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Which modifier in SwiftUI allows you to apply a semi-transparent color overlay on top of a view, often used to create visual effects like darkening or tinting images and backgrounds?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".background()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".foregroundColor()",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": ".overlay()",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": ".tint()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What is the correct way to present a modal sheet in SwiftUI using a boolean binding that controls when the sheet appears, dismissing it when the binding value changes back to false?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".sheet(isPresented: $showSheet) { }",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": ".modal(isShowing: $showSheet) { }",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": ".present(sheet: $showSheet) { }",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".showSheet($showSheet) { }",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "In SwiftUI, which view allows you to create a tab-based interface where users can switch between different views by tapping on tab items at the bottom of the screen?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "NavigationView",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "TabView",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "PageView",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "SplitView",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "What modifier applies space around a view on all sides or specific edges, pushing the view's content away from its boundaries and creating breathing room in your layout design?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".frame()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".spacing()",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": ".padding()",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": ".offset()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Which property wrapper allows you to access shared data across your entire app hierarchy without passing it explicitly through every view, making it available to any descendant view that declares it?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "@State",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "@Binding",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "@EnvironmentObject",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "@ObservedObject",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What SwiftUI modifier allows you to change the color of text and SF Symbols within a view, applying the color uniformly to all foreground elements like text glyphs and icon shapes?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".backgroundColor()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".foregroundColor()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".textColor()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".tintColor()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "In SwiftUI, which modifier allows you to define explicit width and height dimensions for a view, with options for minimum, ideal, and maximum sizes using parameters like maxWidth and maxHeight?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".size()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".frame()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".bounds()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".dimension()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the Spacer view in SwiftUI layouts, especially when used within HStack or VStack to control how views are positioned relative to each other?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "To add visual spacing between views",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "To push views apart by expanding",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "To create empty views",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "To add padding",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Which SwiftUI view modifier applies an animation to changes in a view's state, allowing you to specify the animation curve, duration, and timing function for smooth transitions between different visual states?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".transition()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".animation()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".animate()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".withAnimation()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "What protocol must your custom types conform to when using them in ForEach or List views, requiring a unique identifier property that SwiftUI uses to track and update individual items efficiently?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "Hashable",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Identifiable",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Equatable",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Codable",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "In SwiftUI, which modifier allows you to clip a view to a specific shape like Circle, RoundedRectangle, or Capsule, cutting off any content that extends beyond the shape's boundaries?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".mask()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".clipShape()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".clip()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".shape()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "What SwiftUI function do you wrap around state changes to create animated transitions, explicitly telling the framework which changes should be animated rather than happening instantly?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "animate()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "withAnimation()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "animateChanges()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "UIView.animate()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which SwiftUI view container is specifically designed for efficiently displaying large grids of content with lazy loading, where items are only created as they're about to appear on screen?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "Grid",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "LazyVGrid",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "GridStack",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "CollectionView",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "In SwiftUI, what modifier adds a shadow effect beneath a view with customizable color, radius, and offset values, creating depth and elevation in your interface by simulating a light source?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".dropShadow()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".shadow()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".elevation()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".addShadow()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Which modifier in SwiftUI allows you to execute code when a view appears on screen for the first time or returns to the screen, commonly used for loading data or starting timers?",
+      "answers": [
+        {
+          "id": 1,
+          "text": ".onLoad()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".onAppear()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": ".viewDidLoad()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": ".onStart()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "What SwiftUI view creates a horizontal scrollable container that can display content wider than the screen, often used for image carousels, page indicators, or horizontally scrolling lists of items?",
+      "answers": [
+        {
+          "id": 1,
+          "text": "HStack",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "ScrollView(.horizontal)",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "LazyHStack",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "PageView",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
+
+

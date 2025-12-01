@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Project
+
+  Created by Edgar on 15.11.25.
+  
+*/
+/* Auth - Login */
+"auth.email.label" = "ელ.ფოსტა";
+"auth.email.placeholder" = "თქვენი ელ.ფოსტა";
+"auth.password.label" = "პაროლი";
+"auth.password.placeholder" = "შეიყვანეთ პაროლი";
+"auth.login.button" = "შესვლა";
+"auth.google.button" = "გაგრძელება Google-ით";
+"auth.new.user" = "ახალი ხართ Wazaaaaap-ზე?";
+"auth.signup.button" = "რეგისტრაცია";
+
+/* Auth - Sign Up */
+"auth.signup.title" = "რეგისტრაცია";
+"auth.fullname.label" = "სრული სახელი";
+"auth.fullname.placeholder" = "თქვენი სრული სახელი";
+"auth.username.label" = "მომხმარებელი";
+"auth.username.placeholder" = "თქვენი მომხმარებლის სახელი";
+"auth.confirm.password.label" = "დაადასტურეთ პაროლი";
+"auth.confirm.password.placeholder" = "დაადასტურეთ პაროლი";
+
+/* Profile */
+"profile.title" = "თქვენი პროფილი";
+"profile.fullname.label" = "სრული სახელი";
+"profile.username.label" = "მომხმარებელი";
+"profile.language" = "ენა";
+"profile.save" = "შენახვა";
+"profile.logout" = "გამოსვლა";
+"profile.choose.picture" = "აირჩიეთ პროფილის ფოტო";
